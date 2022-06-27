@@ -21,7 +21,9 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    `~/plugins/modal.js`,
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -35,6 +37,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -52,8 +55,59 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-  
+
   router: {
 	base: '/asu/'
-  }
+  },
+
+  i18n: {
+    strategy: 'no_prefix',
+    lazy: false,
+    differentDomains: false,
+    langDir: '~/locales/',
+    locales: [
+      {
+        code: 'ru',
+        flag: 'ru',
+        name: 'Русский',
+        iso: 'ru-RU',
+        file: 'ru.js'
+      },
+      {
+        code: 'us',
+        flag: 'us',
+        name: 'English',
+        iso: 'en-US',
+        file: 'us.js'
+      },
+      {
+        code: 'cn',
+        flag: 'cn',
+        name: 'China',
+        iso: 'cn-CN',
+        file: 'cn.js'
+      },
+      {
+        code: 'tj',
+        flag: 'tj',
+        name: 'Таджикский',
+        iso: 'tj-TJ',
+        file: 'tj.js'
+      },
+      {
+        code: 'uz',
+        flag: 'uz',
+        name: 'Узбекский',
+        iso: 'uz-UZ',
+        file: 'uz.js'
+      },
+      {
+        code: 'kg',
+        flag: 'kg',
+        name: 'Киргизский',
+        iso: 'kg-KG',
+        file: 'kg.js'
+      }
+    ]
+  },
 }

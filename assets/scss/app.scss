@@ -1,0 +1,43 @@
+@import "./reset";
+@import "./mixins";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+}
+
+a {
+  &::focus,
+  &::active {
+    outline: none !important;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 110px;
+
+  @include laptopMini {
+    padding: 0 30px;
+  }
+
+  @include phone {
+    padding: 0 15px;
+  }
+}
+
+
