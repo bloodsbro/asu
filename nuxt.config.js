@@ -1,9 +1,3 @@
-const routerBase = process.env.GEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-	base: '/asu/'
-  }
-} : {};
-
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -59,5 +53,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   
-  ...routerBase
+  router: {
+	base: '/asu/'
+  }
 }
