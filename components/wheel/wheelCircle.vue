@@ -123,7 +123,7 @@ export default {
       this.isSpinInProgress = false;
       this.reset();
 
-      window.open(item.url, '_blank');
+      window.location.href = item.url;
       // this.$modal.show('showWinModal', item);
     },
 
