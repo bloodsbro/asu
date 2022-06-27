@@ -123,7 +123,7 @@ export default {
       this.isSpinInProgress = false;
       this.reset();
 
-      document.location.replace = item.url;
+      document.location.replace(item.url);
       // this.$modal.show('showWinModal', item);
     },
 
