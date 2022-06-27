@@ -5,6 +5,21 @@
     <link rel='preload' as='document' href='https://bloodsbro.github.io/asu/news'>
     <link rel='preload' as='document' href='https://bloodsbro.github.io/asu/corps'>
 
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/ibb/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/ign/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/ingeo/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/iimo/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/chem/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/ictef/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/college/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/imit/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/miemis/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/yi/'>
+    <link rel='preload' as='document' href='https://vk.com/sfaguofficial/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/rub/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/belocur/'>
+    <link rel='preload' as='document' href='https://abiturient.asu.ru/obrprog/biisk/'>
+
     <div class="menu" ref="menu">
       <i v-if="$route.path === '/'" @click="toggleMenu">
         ...
