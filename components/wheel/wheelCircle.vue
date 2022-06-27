@@ -123,9 +123,7 @@ export default {
       this.isSpinInProgress = false;
       this.reset();
 
-      if(!window.open(item.url)) {
-        location.href = item.url;
-      }
+      location.href = item.url;
       // this.$modal.show('showWinModal', item);
     },
 
