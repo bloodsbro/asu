@@ -11,12 +11,12 @@
         <template v-if="!isSpinInProgress">
           <h2 class="content-h2">
             <img src="@/assets/images/wheel/pinwheel-icon.svg" alt=""/>
-            Рулетка <span>институтов</span>
+            {{ $t('roulette.1') }} <span>{{ $t('roulette.2') }}</span>
           </h2>
           <div class="content-text">
-            Запусти барабан, чтобы узнать подходящий тебе институт
+            {{ $t('roulette.3') }}
           </div>
-          <base-button color="roulette" class="content-button" @click="run()">Запустить</base-button>
+          <base-button color="roulette" class="content-button" @click="run()">{{ $t('roulette.4') }}</base-button>
         </template>
       </div>
     </div>

@@ -5,7 +5,7 @@
     <div class="directions__header" />
 
     <div class="directions__list">
-      <div v-for="(direction, idx) in directions" class="directions__list-item">
+      <div v-for="(direction, idx) in $t('dirs')" class="directions__list-item">
         <div class="directions__list--wrapper">
           <img :src="require(`@/assets/images/directions/${idx}.png`)" alt="" />
           <section class="directions__list--wrapper__desc">
@@ -23,22 +23,6 @@ export default {
 
   data() {
     return {
-      directions: [
-        'ИНСТИТУТ БИОЛОГИИ И БИОТЕХНОЛОГИЙ',
-        'ИНСТИТУТ ГЕОГРАФИИ',
-        'ИНСТИТУТ ИСТОРИИ И МЕЖДУНАРОДНЫХ ОТНОШЕНИЙ',
-        'ИНСТИТУТ МАТЕМАТИКИ И ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ',
-        'ИНСТИТУТ ГУМАНИТАРНЫХ НАУК',
-        'ИНСТИТУТ ЦИФРОВЫХ ТЕХНОЛОГИЙ, ЭЛЕКТРОНИКИ И ФИЗИКИ',
-        'МЕЖДУНАРОДНЫЙ ИНСТИТУТ ЭКОНОМИКИ, МЕНЕДЖМЕНТА И ИНФОРМАЦИОННЫХ СИСТЕМ',
-        'ЮРИДИЧЕСКИЙ ИНСТИТУТ',
-        'ИНСТИТУТ ХИМИИ И ХИМИКО-ФАРМАЦЕВТИЧЕСКИХ ТЕХНОЛОГИЙ',
-        'Рубцовский институт (филиал) АлтГУ',
-        'Филиал АлтГУ в г.Белокурихе',
-        'Филиал АлтГУ в г.Бийске',
-        'Филиал АлтГУ в г.Славгород',
-        'Колледж АлтГУ'
-      ],
       links: [
         'https://abiturient.asu.ru/obrprog/ibb/',
         'https://abiturient.asu.ru/obrprog/ingeo/',

@@ -7,10 +7,10 @@
     </div>
 
     <div class="contacts__list">
-      <button><img class="contacts__list-icon" width="32.5" height="22.5" src="@/assets/images/icons/vk.png" alt="" /><a target="_blank" href="https://m.vk.com/abiturientasu">Мы ВКонтакте</a></button>
-      <button><img class="contacts__list-icon" width="32.5" height="22.5" src="@/assets/images/icons/telegram.png" alt="" /><a target="_blank" href="https://t.me/abiturient22asu">Мы в Telegram</a></button>
-      <button><img class="contacts__list-icon" width="32.5" height="22.5" src="@/assets/images/icons/whatsapp.png" alt="" /><a target="_blank" href="https://api.whatsapp.com/send?phone=79339333799&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21+%D0%9D%D0%B0%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5+%D0%BD%D0%B0%D0%BC%2C+%D0%B5%D1%81%D0%BB%D0%B8+%D0%B5%D1%81%D1%82%D1%8C+%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B.&app_absent=0">Мы в WhatsApp</a></button>
-      <button><img class="contacts__list-icon" width="32.5" height="22.5" src="@/assets/images/icons/yandex.png" alt="" /><a target="_blank" href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">Мы в Яндекс.Дзен</a></button>
+      <button><img class="contacts__list-icon" width="32.5" height="22.5" src="@/assets/images/icons/vk.png" alt="" /><a target="_blank" href="https://m.vk.com/abiturientasu">{{ $t('contacts.1') }}</a></button>
+      <button><img class="contacts__list-icon" width="32.5" height="22.5" src="@/assets/images/icons/telegram.png" alt="" /><a target="_blank" href="https://t.me/abiturient22asu">{{ $t('contacts.2') }}</a></button>
+      <button><img class="contacts__list-icon" width="32.5" height="22.5" src="@/assets/images/icons/whatsapp.png" alt="" /><a target="_blank" href="https://api.whatsapp.com/send?phone=79339333799&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21+%D0%9D%D0%B0%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5+%D0%BD%D0%B0%D0%BC%2C+%D0%B5%D1%81%D0%BB%D0%B8+%D0%B5%D1%81%D1%82%D1%8C+%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B.&app_absent=0">{{ $t('contacts.3') }}</a></button>
+      <button><img class="contacts__list-icon" width="32.5" height="22.5" src="@/assets/images/icons/yandex.png" alt="" /><a target="_blank" href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">{{ $t('contacts.4') }}</a></button>
       <button><img class="contacts__list-icon" width="32.5" height="22.5" src="@/assets/images/icons/phone.png" alt="" /><a target="_blank" href="tel:+73852291222">+7 (3852) 291-222</a></button>
     </div>
   </div>

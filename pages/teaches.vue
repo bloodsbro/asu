@@ -5,7 +5,7 @@
     <div class="teachers__header" />
 
     <div class="teachers__list">
-      <div v-for="teacher in teachers" class="teachers__list-item">
+      <div v-for="teacher in $t('teachers')" class="teachers__list-item">
         <img :src="require(`@/assets/images/teachers/${teacher.img}`)" alt="" />
         <section class="teachers__list-item__desc">
           <a class="block teachers__list-item__desc-title">{{ teacher.title }}</a>
@@ -19,38 +19,6 @@
 <script>
 export default {
   name: "TeachersView",
-
-  data() {
-    return {
-      teachers: [
-        {
-          img: '1.jpg',
-          title: 'Романова Екатерина Геннадьевна',
-          job: 'Ответственный секретарь приемной комиссии'
-        },
-        {
-          img: '2.jpg',
-          title: 'Валюлина Екатерина Владимировна',
-          job: 'Координатор по продвижению образовательных услуг'
-        },
-        {
-          img: '3.jpg',
-          title: 'Ерошенко Жанна Павловна',
-          job: 'Член приемной комиссии'
-        },
-        {
-          img: '4.jpg',
-          title: 'Арнаут Дарья Павловна',
-          job: 'Заместитель ответственного секретаря приемной комиссии'
-        },
-        {
-          img: '5.jpg',
-          title: 'Веснина Екатерина Павловна',
-          job: 'Член приемной комиссии'
-        }
-      ]
-    }
-  },
 
   methods: {
     back() {

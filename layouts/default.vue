@@ -33,15 +33,15 @@
           </div>
 
           <ul class="menu_show_links">
-            <nuxt-link to="/news" class="menu_show_links_li">Новости</nuxt-link>
-            <nuxt-link to="/roulette" class="menu_show_links_li">Рулетка институтов</nuxt-link>
-            <nuxt-link to="/map" class="menu_show_links_li">Как доехать</nuxt-link>
-            <nuxt-link to="/corps" class="menu_show_links_li">Корпуса</nuxt-link>
-            <nuxt-link to="/directions" class="menu_show_links_li">Направления подготовки</nuxt-link>
-            <nuxt-link to="/documents" class="menu_show_links_li">Документы</nuxt-link>
+            <nuxt-link to="/news" class="menu_show_links_li">{{ $t('nav.news') }}</nuxt-link>
+            <nuxt-link to="/roulette" class="menu_show_links_li">{{ $t('nav.roulette') }}</nuxt-link>
+            <nuxt-link to="/map" class="menu_show_links_li">{{ $t('nav.travel') }}</nuxt-link>
+            <nuxt-link to="/corps" class="menu_show_links_li">{{ $t('nav.corps') }}</nuxt-link>
+            <nuxt-link to="/directions" class="menu_show_links_li">{{ $t('nav.dirs') }}</nuxt-link>
+            <nuxt-link to="/documents" class="menu_show_links_li">{{ $t('nav.docs') }}</nuxt-link>
             <nuxt-link v-show="false" to="/timetable" class="menu_show_links_li">Расписание (для студентов)</nuxt-link>
-            <nuxt-link to="/teaches" class="menu_show_links_li">Состав приемной комиссии</nuxt-link>
-            <nuxt-link to="/contacts" class="menu_show_links_li">Контакты</nuxt-link>
+            <nuxt-link to="/teaches" class="menu_show_links_li">{{ $t('nav.techs') }}</nuxt-link>
+            <nuxt-link to="/contacts" class="menu_show_links_li">{{ $t('nav.contacts') }}</nuxt-link>
           </ul>
 
           <div class="menu_show_lang">

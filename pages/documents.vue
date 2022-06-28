@@ -5,30 +5,30 @@
     <div class="documents__header" />
 
     <div class="documents__list">
-      <span>Для подачи заявления онлайн:</span>
-      <button @click="goto('https://lk.abiturient.asu.ru/')">Личный кабинет абитуриента</button>
-      <span>Для подачи документов в <a>приёмной комиссии:</a></span>
+      <span>{{ $t('docs.1') }}</span>
+      <button @click="goto('https://lk.abiturient.asu.ru/')">{{ $t('docs.2') }}</button>
+      <span>{{ $t('docs.3') }} <a>{{ $t('docs.4') }}</a></span>
 
-      <a class="left title">Обязательные:</a>
+      <a class="left title">{{ $t('docs.5') }}</a>
       <div class="documents__doc">
         <img src="@/assets/images/documents/passport.png" alt="" />
-        <a><span>1.</span> Паспорт</a>
+        <a><span>1.</span> {{ $t('docs.6') }}</a>
       </div>
       <div class="documents__doc">
         <img src="@/assets/images/documents/atestat.png" alt="" />
-        <a><span>2.</span> Аттестат</a>
+        <a><span>2.</span> {{ $t('docs.7') }}</a>
       </div>
       <div class="documents__doc">
         <img src="@/assets/images/documents/snils.jpg" alt="" />
-        <a><span>3.</span> СНИЛС</a>
+        <a><span>3.</span> {{ $t('docs.8') }}</a>
       </div>
 
-      <a class="left title">Дополнительные:</a>
+      <a class="left title">{{ $t('docs.9') }}</a>
       <div class="left documents__add">
-        <a><span>1.</span>Копия свидетельства о браке.</a>
-        <a><span>2.</span>Документы, дающие право на использование особых прав.</a>
-        <a><span>3.</span>Заверенный в установленном порядке перевод документа об образовании на русский язык.</a>
-        <a><span>4.</span>Другие документы <span class="block">(дипломы, сертификаты, грамоты и т.п.)</span></a>
+        <a><span>1.</span>{{ $t('docs.10') }}</a>
+        <a><span>2.</span>{{ $t('docs.11') }}</a>
+        <a><span>3.</span>{{ $t('docs.12') }}</a>
+        <a><span>4.</span>{{ $t('docs.13') }} <span class="block">{{ $t('docs.14') }}</span></a>
       </div>
     </div>
   </div>

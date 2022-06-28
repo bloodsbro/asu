@@ -3,73 +3,73 @@
     <img src="@/assets/images/icons/back.png" height="32px" width="24px" alt="logo" class='link-back' @click='back' />
 
     <div v-if="stage === 0" class="container">
-      <base-button color="roulette" class="content-button" @click="stage = 1">Из аэропорта</base-button>
-      <base-button color="roulette" class="content-button" @click="stage = 2">С ЖД вокзала</base-button>
-      <base-button color="roulette" class="content-button" @click="stage = 3">С автовокзала</base-button>
+      <base-button color="roulette" class="content-button" @click="stage = 1">{{ $t('map.1.name') }}</base-button>
+      <base-button color="roulette" class="content-button" @click="stage = 2">{{ $t('map.2.name') }}</base-button>
+      <base-button color="roulette" class="content-button" @click="stage = 3">{{ $t('map.3.name') }}</base-button>
     </div>
     <div v-else-if="stage === 1">
       <div class="map-item">
-        <span>Аэропорт</span>
+        <span>{{ $t('map.1.1') }}</span>
         <img src="@/assets/images/map/aero.jpg" alt="" />
       </div>
       <div class="map-item">
-        <span>Остановка "Аэропорт"</span>
+        <span>{{ $t('map.1.2') }}</span>
         <img src="@/assets/images/map/2.jpg" alt="" />
       </div>
       <div class="map-item">
-        <span class="autobus">Автобус №144</span>
+        <span class="autobus">{{ $t('map.1.3') }}</span>
         <img src="@/assets/images/map/a55.png" alt="" />
       </div>
       <div class="map-item">
-        <span>Маршрут автобуса</span>
+        <span>{{ $t('map.1.4') }}</span>
         <img src="@/assets/images/map/map2.png" alt="" />
       </div>
       <div class="map-item">
-        <span>Конечная остановка:"Площадь советов" или "ЦУМ"</span>
+        <span>{{ $t('map.1.5') }}</span>
         <img src="@/assets/images/map/tsum.png" alt="" />
       </div>
     </div>
     <div v-else-if="stage === 2">
       <div class="map-item">
-        <span>ЖД возал</span>
+        <span>{{ $t('map.2.1') }}</span>
         <img src="@/assets/images/map/train.png" alt="" />
       </div>
       <div class="map-item">
-        <span>Остановка "Площадь Победы"</span>
+        <span>{{ $t('map.2.2') }}</span>
         <img src="@/assets/images/map/stop1.png" alt="" />
       </div>
       <div class="map-item">
-        <span class="autobus">Автобус №55</span>
+        <span class="autobus">{{ $t('map.2.3') }}</span>
         <img src="@/assets/images/map/a55.png" alt="" />
       </div>
       <div class="map-item">
-        <span>Маршрут автобуса</span>
+        <span>{{ $t('map.2.4') }}</span>
         <img src="@/assets/images/map/map1.png" alt="" />
       </div>
       <div class="map-item">
-        <span>Конечная остановка:"Площадь советов" или "ЦУМ"</span>
+        <span>{{ $t('map.2.5') }}</span>
         <img src="@/assets/images/map/tsum.png" alt="" />
       </div>
     </div>
     <div v-else-if="stage === 3">
       <div class="map-item">
-        <span>Автовокзал</span>
+        <span>{{ $t('map.3.1') }}</span>
         <img src="@/assets/images/map/3.jpg" alt="" />
       </div>
       <div class="map-item">
-        <span>Остановка "Площадь Победы"</span>
+        <span>{{ $t('map.3.2') }}</span>
         <img src="@/assets/images/map/stop1.png" alt="" />
       </div>
       <div class="map-item">
-        <span class="autobus">Автобус №55</span>
+        <span class="autobus">{{ $t('map.3.3') }}</span>
         <img src="@/assets/images/map/a55.png" alt="" />
       </div>
       <div class="map-item">
-        <span>Маршрут автобуса</span>
+        <span>{{ $t('map.3.4') }}</span>
         <img src="@/assets/images/map/map1.png" alt="" />
       </div>
       <div class="map-item">
-        <span>Конечная остановка:"Площадь советов" или "ЦУМ"</span>
+        <span>{{ $t('map.3.5') }}</span>
         <img src="@/assets/images/map/tsum.png" alt="" />
       </div>
     </div>

@@ -65,6 +65,8 @@ export default {
     lazy: false,
     differentDomains: false,
     langDir: '~/locales/',
+    defaultLocale: 'ru',
+    fallbackLocale: 'ru',
     locales: [
       {
         code: 'ru',
