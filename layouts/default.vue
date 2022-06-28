@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <link v-for="n in 7" rel="preload" as="image" :href="`${require(`@/assets/images/backgrounds/bg${n}.jpg`)}`">
-    <link rel='preload' as='document' href='https://asu.ru/news'>
     <link rel='preload' as='document' href='https://bloodsbro.github.io/asu/news'>
     <link rel='preload' as='document' href='https://bloodsbro.github.io/asu/corps'>
 

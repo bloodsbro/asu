@@ -45,15 +45,6 @@ export default {
 
       return this.news;
     },
-
-    getState() {
-      try {
-        const cache = JSON.parse(localStorage.getItem(`state_${this.stateLink}`)) || [];
-        if(cache && this.state.length <= 0) return cache;
-      } catch { }
-
-      return this.news;
-    }
   },
 
   methods: {
