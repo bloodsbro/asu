@@ -73,7 +73,7 @@ export default {
     4: 'admission committee:',
     5: 'Required:',
     6: 'Passport',
-    7: 'Passport',
+    7: 'Certificate',
     8: 'SNILS',
     9: 'Additional:',
     10: 'Copy of marriage certificate.',
